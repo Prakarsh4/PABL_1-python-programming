@@ -16,16 +16,13 @@ n = int(input())
 arr = list(map(int, input().split()))
 
 freq = {}
-
 for num in arr:
     if num in freq:
         freq[num] += 1
     else:
         freq[num] = 1
-
 max_count = 0
 result = arr[0]
-
 for num in freq:
     if freq[num] > max_count:
         max_count = freq[num]
